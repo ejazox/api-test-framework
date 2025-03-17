@@ -19,4 +19,11 @@ export class ArticlesAssertions {
   static validateArticleCreation(responseBody, expectedTitle) {
     expect(responseBody.article.title).toBe(expectedTitle);
   }
+  // Validate an individual article's details
+  static validateEditedArticle(article, updatedData) {
+    expect(article.title).toBe(updatedData.title);
+    expect(article.description).toBe(updatedData.description);
+    expect(article.body).toBe(updatedData.body);
+    expect(article.tagList).toEqual(expect.arrayContaining(updatedData.tagList));
+  }
 }

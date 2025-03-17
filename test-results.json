@@ -86,7 +86,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 570,
+                      "duration": 626,
                       "errors": [],
                       "stdout": [
                         {
@@ -95,7 +95,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-03-17T15:37:44.953Z",
+                      "startTime": "2025-03-17T19:01:19.844Z",
                       "attachments": []
                     }
                   ],
@@ -106,43 +106,96 @@
               "file": "api/articles.test.js",
               "line": 21,
               "column": 7
-            },
+            }
+          ],
+          "suites": [
             {
-              "title": "Create a new article",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "title": "Articles API Tests",
+              "file": "api/articles.test.js",
+              "line": 69,
+              "column": 6,
+              "specs": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
+                  "title": "Create a new article",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 386,
-                      "errors": [],
-                      "stdout": [
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
                         {
-                          "text": "Article created successfully\n"
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 386,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Article created successfully with slug: New-Playwright-Article-0f3cf5bd-8122-42b5-8766-687694b50f06-22521\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-03-17T19:01:21.220Z",
+                          "attachments": []
                         }
                       ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-03-17T15:37:46.099Z",
-                      "attachments": []
+                      "status": "expected"
                     }
                   ],
-                  "status": "expected"
+                  "id": "eb3da9e438d8ddf58e09-9ac0fbd2a0b7e1677795",
+                  "file": "api/articles.test.js",
+                  "line": 72,
+                  "column": 7
+                },
+                {
+                  "title": "Edit an article",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 714,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Article before update: {\n  slug: \u001b[32m'New-Playwright-Article-0f3cf5bd-8122-42b5-8766-687694b50f06-22521'\u001b[39m,\n  title: \u001b[32m'New Playwright Article 0f3cf5bd-8122-42b5-8766-687694b50f06'\u001b[39m,\n  description: \u001b[32m'Automating API testing'\u001b[39m,\n  body: \u001b[32m'This is an article created by Ejaz with ID 0f3cf5bd-8122-42b5-8766-687694b50f06'\u001b[39m,\n  tagList: [ \u001b[32m'testing'\u001b[39m, \u001b[32m'automation'\u001b[39m ],\n  createdAt: \u001b[32m'2025-03-17T19:01:21.350Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-03-17T19:01:21.350Z'\u001b[39m,\n  favorited: \u001b[33mfalse\u001b[39m,\n  favoritesCount: \u001b[33m0\u001b[39m,\n  author: {\n    username: \u001b[32m'EjazQA'\u001b[39m,\n    bio: \u001b[1mnull\u001b[22m,\n    image: \u001b[32m'https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg'\u001b[39m,\n    following: \u001b[33mfalse\u001b[39m\n  }\n}\n"
+                            },
+                            {
+                              "text": "response body {\n  article: {\n    slug: \u001b[32m'New-Updated-data-Articles-0f3cf5bd-8122-42b5-8766-687694b50f06-22521'\u001b[39m,\n    title: \u001b[32m'New Updated data Articles 0f3cf5bd-8122-42b5-8766-687694b50f06'\u001b[39m,\n    description: \u001b[32m'Test QAdd'\u001b[39m,\n    body: \u001b[32m'This article has been updated via Playwright API.'\u001b[39m,\n    tagList: [ \u001b[32m'testing'\u001b[39m, \u001b[32m'automation'\u001b[39m, \u001b[32m'playwright'\u001b[39m ],\n    createdAt: \u001b[32m'2025-03-17T19:01:21.350Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-03-17T19:01:22.080Z'\u001b[39m,\n    favorited: \u001b[33mfalse\u001b[39m,\n    favoritesCount: \u001b[33m0\u001b[39m,\n    author: {\n      username: \u001b[32m'EjazQA'\u001b[39m,\n      bio: \u001b[1mnull\u001b[22m,\n      image: \u001b[32m'https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg'\u001b[39m,\n      following: \u001b[33mfalse\u001b[39m\n    }\n  }\n}\n"
+                            },
+                            {
+                              "text": "Article with slug \"New-Playwright-Article-0f3cf5bd-8122-42b5-8766-687694b50f06-22521\" edited successfully\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-03-17T19:01:21.612Z",
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eb3da9e438d8ddf58e09-fe3bd5e46f3781406d6a",
+                  "file": "api/articles.test.js",
+                  "line": 92,
+                  "column": 7
                 }
-              ],
-              "id": "eb3da9e438d8ddf58e09-c11e1bbd5ea8b834e89b",
-              "file": "api/articles.test.js",
-              "line": 29,
-              "column": 7
+              ]
             }
           ]
         }
@@ -177,7 +230,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 333,
+                      "duration": 426,
                       "errors": [],
                       "stdout": [
                         {
@@ -186,7 +239,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-03-17T15:37:44.920Z",
+                      "startTime": "2025-03-17T19:01:19.779Z",
                       "attachments": []
                     }
                   ],
@@ -231,7 +284,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 671,
+                      "duration": 776,
                       "errors": [],
                       "stdout": [
                         {
@@ -240,7 +293,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-03-17T15:37:44.921Z",
+                      "startTime": "2025-03-17T19:01:19.753Z",
                       "attachments": []
                     }
                   ],
@@ -259,9 +312,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-03-17T15:37:43.309Z",
-    "duration": 3256.7169999999996,
-    "expected": 4,
+    "startTime": "2025-03-17T19:01:17.430Z",
+    "duration": 5037.361,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

@@ -10,13 +10,57 @@ export class ArticlesAPI {
     return await apiRequest.get(`${this.baseURL}/articles?limit=${limit}&offset=${offset}`);
   }
 
-  async createArticle(apiRequest, token, articleData) {
-    return await apiRequest.post(`${this.baseURL}/articles`, {
+// Method to fetch an article by slug
+async fetchArticle(apiRequest, token, slug) {
+    const response = await apiRequest.get(`${config.BASE_URL}/articles/${slug}`, {
       headers: {
-        'Authorization': `Token ${token}`,
-        'Content-Type': 'application/json'
+        Authorization: `Bearer ${token}`,
       },
-      data: { article: articleData }
     });
+  
+    return response;
   }
+    
+    // Method to create an article written by Ejaz
+
+    async createArticle(apiRequest, token, articleData) {
+        return await apiRequest.post(`${this.baseURL}/articles`, {
+          headers: {
+            'Authorization': `Token ${token}`,
+            'Content-Type': 'application/json'
+          },
+          data: { article: articleData }
+        });
+      }
+
+  // Method to edit an article written by Ejaz
+  async editArticle(apiRequest, token, slug, articleData) {
+    // Fetch the article before updating it
+    const response = await this.fetchArticle(apiRequest, token, slug);
+    const responseBody = await response.json();
+    
+    // Check if the article exists
+    if (responseBody.article) {
+      console.log('Article before update:', responseBody.article);
+  
+      // Perform the update with new data
+      const updateResponse = await apiRequest.put(
+        `${config.BASE_URL}/articles/${slug}`,
+        {
+          data: {
+            article: articleData,
+          },
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+  
+      return updateResponse;
+    } else {
+      // If the article does not exist
+      throw new Error(`Article with slug ${slug} not found`);
+    }
+  }
+    
 }
