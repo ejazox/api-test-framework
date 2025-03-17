@@ -1,0 +1,10 @@
+version: '3'
+services:
+  api-test-framework:
+    build: .
+    container_name: api-test-framework
+    environment:
+      BASE_URL: 'https://conduit-api.bondaracademy.com/api'
+    volumes:
+      - .:/app   
+    command: ["npx", "playwright", "test"]
