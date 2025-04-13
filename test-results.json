@@ -99,7 +99,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 725,
+                      "duration": 516,
                       "errors": [],
                       "stdout": [
                         {
@@ -108,7 +108,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-13T17:04:39.006Z",
+                      "startTime": "2025-04-13T17:09:16.937Z",
                       "attachments": []
                     }
                   ],
@@ -157,16 +157,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 286,
+                          "duration": 387,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Article created successfully with slug: New-Playwright-Article-e5beb8d9-f84f-45b0-a49f-9d6d54ebcf9b-22521\n"
+                              "text": "Article created successfully with slug: New-Playwright-Article-02c4ad9d-cb23-4741-82be-230a53650842-22521\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-04-13T17:04:40.269Z",
+                          "startTime": "2025-04-13T17:09:17.992Z",
                           "attachments": []
                         }
                       ],
@@ -207,22 +207,22 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 755,
+                          "duration": 609,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Article before update: {\n  slug: \u001b[32m'New-Playwright-Article-e5beb8d9-f84f-45b0-a49f-9d6d54ebcf9b-22521'\u001b[39m,\n  title: \u001b[32m'New Playwright Article e5beb8d9-f84f-45b0-a49f-9d6d54ebcf9b'\u001b[39m,\n  description: \u001b[32m'Automating API testing'\u001b[39m,\n  body: \u001b[32m'This is an article created by Ejaz with ID e5beb8d9-f84f-45b0-a49f-9d6d54ebcf9b'\u001b[39m,\n  tagList: [ \u001b[32m'testing'\u001b[39m, \u001b[32m'automation'\u001b[39m ],\n  createdAt: \u001b[32m'2025-04-13T17:04:40.372Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-04-13T17:04:40.372Z'\u001b[39m,\n  favorited: \u001b[33mfalse\u001b[39m,\n  favoritesCount: \u001b[33m0\u001b[39m,\n  author: {\n    username: \u001b[32m'EjazQA'\u001b[39m,\n    bio: \u001b[1mnull\u001b[22m,\n    image: \u001b[32m'https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg'\u001b[39m,\n    following: \u001b[33mfalse\u001b[39m\n  }\n}\n"
+                              "text": "Article before update: {\n  slug: \u001b[32m'New-Playwright-Article-02c4ad9d-cb23-4741-82be-230a53650842-22521'\u001b[39m,\n  title: \u001b[32m'New Playwright Article 02c4ad9d-cb23-4741-82be-230a53650842'\u001b[39m,\n  description: \u001b[32m'Automating API testing'\u001b[39m,\n  body: \u001b[32m'This is an article created by Ejaz with ID 02c4ad9d-cb23-4741-82be-230a53650842'\u001b[39m,\n  tagList: [ \u001b[32m'testing'\u001b[39m, \u001b[32m'automation'\u001b[39m ],\n  createdAt: \u001b[32m'2025-04-13T17:09:18.148Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-04-13T17:09:18.148Z'\u001b[39m,\n  favorited: \u001b[33mfalse\u001b[39m,\n  favoritesCount: \u001b[33m0\u001b[39m,\n  author: {\n    username: \u001b[32m'EjazQA'\u001b[39m,\n    bio: \u001b[1mnull\u001b[22m,\n    image: \u001b[32m'https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg'\u001b[39m,\n    following: \u001b[33mfalse\u001b[39m\n  }\n}\n"
                             },
                             {
-                              "text": "response body {\n  article: {\n    slug: \u001b[32m'New-Updated-data-Articles-e5beb8d9-f84f-45b0-a49f-9d6d54ebcf9b-22521'\u001b[39m,\n    title: \u001b[32m'New Updated data Articles e5beb8d9-f84f-45b0-a49f-9d6d54ebcf9b'\u001b[39m,\n    description: \u001b[32m'Test QAdd'\u001b[39m,\n    body: \u001b[32m'This article has been updated via Playwright API.'\u001b[39m,\n    tagList: [ \u001b[32m'testing'\u001b[39m, \u001b[32m'automation'\u001b[39m, \u001b[32m'playwright'\u001b[39m ],\n    createdAt: \u001b[32m'2025-04-13T17:04:40.372Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-04-13T17:04:41.027Z'\u001b[39m,\n    favorited: \u001b[33mfalse\u001b[39m,\n    favoritesCount: \u001b[33m0\u001b[39m,\n    author: {\n      username: \u001b[32m'EjazQA'\u001b[39m,\n      bio: \u001b[1mnull\u001b[22m,\n      image: \u001b[32m'https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg'\u001b[39m,\n      following: \u001b[33mfalse\u001b[39m\n    }\n  }\n}\n"
+                              "text": "response body {\n  article: {\n    slug: \u001b[32m'New-Updated-data-Articles-02c4ad9d-cb23-4741-82be-230a53650842-22521'\u001b[39m,\n    title: \u001b[32m'New Updated data Articles 02c4ad9d-cb23-4741-82be-230a53650842'\u001b[39m,\n    description: \u001b[32m'Test QAdd'\u001b[39m,\n    body: \u001b[32m'This article has been updated via Playwright API.'\u001b[39m,\n    tagList: [ \u001b[32m'testing'\u001b[39m, \u001b[32m'automation'\u001b[39m, \u001b[32m'playwright'\u001b[39m ],\n    createdAt: \u001b[32m'2025-04-13T17:09:18.148Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-04-13T17:09:18.844Z'\u001b[39m,\n    favorited: \u001b[33mfalse\u001b[39m,\n    favoritesCount: \u001b[33m0\u001b[39m,\n    author: {\n      username: \u001b[32m'EjazQA'\u001b[39m,\n      bio: \u001b[1mnull\u001b[22m,\n      image: \u001b[32m'https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg'\u001b[39m,\n      following: \u001b[33mfalse\u001b[39m\n    }\n  }\n}\n"
                             },
                             {
-                              "text": "Article with slug \"New-Playwright-Article-e5beb8d9-f84f-45b0-a49f-9d6d54ebcf9b-22521\" edited successfully\n"
+                              "text": "Article with slug \"New-Playwright-Article-02c4ad9d-cb23-4741-82be-230a53650842-22521\" edited successfully\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-04-13T17:04:40.559Z",
+                          "startTime": "2025-04-13T17:09:18.384Z",
                           "attachments": []
                         }
                       ],
@@ -282,7 +282,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 515,
+                      "duration": 405,
                       "errors": [],
                       "stdout": [
                         {
@@ -291,7 +291,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-13T17:04:38.968Z",
+                      "startTime": "2025-04-13T17:09:16.914Z",
                       "attachments": []
                     }
                   ],
@@ -349,7 +349,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 556,
+                      "duration": 548,
                       "errors": [],
                       "stdout": [
                         {
@@ -358,7 +358,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-13T17:04:38.957Z",
+                      "startTime": "2025-04-13T17:09:16.877Z",
                       "attachments": []
                     }
                   ],
@@ -377,8 +377,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-13T17:04:36.668Z",
-    "duration": 4697.017,
+    "startTime": "2025-04-13T17:09:15.109Z",
+    "duration": 3941.1579999999994,
     "expected": 5,
     "skipped": 0,
     "unexpected": 0,
