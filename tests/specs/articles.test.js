@@ -18,9 +18,6 @@ test.describe('Articles API Tests', () => {
   });
 
   test('Verify fetching articles', async () => {
-    test.info().annotations.push({ type: 'feature', description: 'Articles' });
-    test.info().annotations.push({ type: 'story', description: 'Fetch list of articles' });
-    test.info().annotations.push({ type: 'owner', description: 'Ejaz' });
     const response = await articlesAPI.fetchArticles(apiRequest);
     const responseBody = await response.json();
     ArticlesAssertions.validateResponseStructure(responseBody);
@@ -34,10 +31,6 @@ test.describe('Articles API Tests', () => {
   const uniqueID = uuidv4();
 
   test('Create a new article', async () => {
-
-    test.info().annotations.push({type: 'feature', description: 'Articles'});
-    test.info().annotations.push({ type: 'story', description: 'Create an new article' });
-    test.info().annotations.push({ type: 'owner', description: 'Ejaz'});
     const articleData = {
       title: `New Playwright Article ${uniqueID}`,
       description: 'Automating API testing',
@@ -55,9 +48,6 @@ test.describe('Articles API Tests', () => {
   });
 
   test('Edit an article', async () => {
-    test.info().annotations.push({type: 'feature', description: 'Articles'});
-    test.info().annotations.push({ type: 'story', description: 'Edit an article' });
-    test.info().annotations.push({ type: 'owner', description: 'Ejaz'});
     if (!articleSlug) {
       throw new Error("Article slug is not available, ensure article creation is successful.");
     }

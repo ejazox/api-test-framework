@@ -13,9 +13,6 @@ test.describe('Tags API Tests', () => {
   });
 
   test('Verify fetching tags', async () => {
-    test.info().annotations.push({ type: 'feature', description: 'Tags' });
-    test.info().annotations.push({ type: 'story', description: 'Fetch tags' });
-    test.info().annotations.push({ type: 'owner', description: 'Ejaz' });
     const response = await tagsAPI.fetchTags(apiRequest);
     const responseBody = await response.json();
     TagsAssertions.validateTagsStructure(responseBody);
