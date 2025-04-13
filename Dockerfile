@@ -13,10 +13,8 @@ RUN npm install
 # Install Playwright dependencies
 RUN npx playwright install
 
-# Install Allure commandline globally
-RUN npm install -g allure-commandline
-
-# Install Playwright Allure reporter
+# Install Allure commandline and the correct Playwright Allure reporter
+RUN npm install allure-commandline --save-dev
 RUN npm install allure-playwright --save-dev
 
 # Copy the rest of the application files

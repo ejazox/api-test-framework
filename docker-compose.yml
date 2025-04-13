@@ -7,10 +7,4 @@ services:
       BASE_URL: 'https://conduit-api.bondaracademy.com/api'
     volumes:
       - .:/app   
-    working_dir: /app
-    command: >
-      sh -c "npx playwright test --reporter=allure-playwright &&
-             allure generate allure-results --clean -o allure-report &&
-             allure open --host 0.0.0.0 --port 4000 allure-report"
-    ports:
-      - "4000:4000"
+    command: ["npx", "playwright", "test"]
