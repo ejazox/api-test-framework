@@ -1,6 +1,7 @@
 import { expect } from '@playwright/test';
 
 export class FavoritesAssertions {
+  
   // Validate the response structure for favorited articles
   static validateFavoriteResponseStructure(responseBody) {
     expect(responseBody).toHaveProperty('articles');

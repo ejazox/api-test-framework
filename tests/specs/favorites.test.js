@@ -1,6 +1,6 @@
 import { test,expect } from '@playwright/test';
-import { FavoritesAPI } from './favorites.api.js';
-import { FavoritesAssertions } from './favorites.asserts.js';
+import { FavoritesAPI } from '../api/favorites.api.js';
+import { FavoritesAssertions } from '../asserts/favorites.asserts.js';
 import { createApiRequest } from '../utils/api.utils.js';
 import { getAuthToken } from '../utils/authSetup.utils.js';
 
@@ -16,6 +16,9 @@ test.describe('Favorites API Tests', () => {
   });
 
   test('Favorite an article', async () => {
+    test.info().annotations.push({type: 'feature', description: 'Favorites'});
+    test.info().annotations.push({ type: 'story', description: 'Favorite an article' });
+    test.info().annotations.push({ type: 'owner', description: 'Ejaz' });
     const slug = 'New-Playwright-Article-22521';
     const response = await favoritesAPI.favoriteArticle(apiRequest, token, slug);
     const responseBody = await response.json();

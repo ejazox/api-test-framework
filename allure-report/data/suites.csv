@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","585","Verify fetching articles","","Sun Apr 13 16:35:09 CEST 2025","passed","Sun Apr 13 16:35:09 CEST 2025","Articles API Tests","api/articles.test.js","",""
+"","306","Favorite an article","","Sun Apr 13 16:35:09 CEST 2025","passed","Sun Apr 13 16:35:09 CEST 2025","Favorites API Tests","api/favorites.test.js","",""
+"","593","Edit an article","","Sun Apr 13 16:35:10 CEST 2025","passed","Sun Apr 13 16:35:11 CEST 2025","Articles API Tests > Articles API Tests","api/articles.test.js","",""
+"","318","Create a new article","","Sun Apr 13 16:35:10 CEST 2025","passed","Sun Apr 13 16:35:10 CEST 2025","Articles API Tests > Articles API Tests","api/articles.test.js","",""
+"","544","Verify fetching tags","","Sun Apr 13 16:35:09 CEST 2025","passed","Sun Apr 13 16:35:09 CEST 2025","Tags API Tests","api/tags.test.js","",""

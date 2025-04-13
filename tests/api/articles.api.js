@@ -9,8 +9,6 @@ export class ArticlesAPI {
   async fetchArticles(apiRequest, limit = 10, offset = 0) {
     return await apiRequest.get(`${this.baseURL}/articles?limit=${limit}&offset=${offset}`);
   }
-
-// Method to fetch an article by slug
 async fetchArticle(apiRequest, token, slug) {
     const response = await apiRequest.get(`${config.BASE_URL}/articles/${slug}`, {
       headers: {
@@ -20,8 +18,6 @@ async fetchArticle(apiRequest, token, slug) {
   
     return response;
   }
-    
-    // Method to create an article written by Ejaz
 
     async createArticle(apiRequest, token, articleData) {
         return await apiRequest.post(`${this.baseURL}/articles`, {
@@ -33,7 +29,7 @@ async fetchArticle(apiRequest, token, slug) {
         });
       }
 
-  // Method to edit an article written by Ejaz
+  
   async editArticle(apiRequest, token, slug, articleData) {
     // Fetch the article before updating it
     const response = await this.fetchArticle(apiRequest, token, slug);
@@ -58,7 +54,6 @@ async fetchArticle(apiRequest, token, slug) {
   
       return updateResponse;
     } else {
-      // If the article does not exist
       throw new Error(`Article with slug ${slug} not found`);
     }
   }

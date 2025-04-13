@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/app/playwright.config.ts",
-    "rootDir": "/app/tests",
+    "configFile": "/Users/ejazahmed/Desktop/PW-APITEST-APP/playwright.config.ts",
+    "rootDir": "/Users/ejazahmed/Desktop/PW-APITEST-APP/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -24,6 +24,10 @@
         {
           "outputFile": "test-results.json"
         }
+      ],
+      [
+        "/Users/ejazahmed/Desktop/PW-APITEST-APP/node_modules/allure-playwright/dist/cjs/index.js",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -33,7 +37,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/app/test-results",
+        "outputDir": "/Users/ejazahmed/Desktop/PW-APITEST-APP/test-results",
         "repeatEach": 1,
         "retries": 2,
         "metadata": {
@@ -41,7 +45,7 @@
         },
         "id": "",
         "name": "",
-        "testDir": "/app/tests",
+        "testDir": "/Users/ejazahmed/Desktop/PW-APITEST-APP/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -52,21 +56,21 @@
     "shard": null,
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
-    "version": "1.51.0",
-    "workers": 4,
+    "version": "1.51.1",
+    "workers": 5,
     "webServer": null
   },
   "suites": [
     {
-      "title": "api/articles.test.js",
-      "file": "api/articles.test.js",
+      "title": "specs/articles.test.js",
+      "file": "specs/articles.test.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Articles API Tests",
-          "file": "api/articles.test.js",
+          "file": "specs/articles.test.js",
           "line": 9,
           "column": 6,
           "specs": [
@@ -77,7 +81,20 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [],
+                  "annotations": [
+                    {
+                      "type": "feature",
+                      "description": "Articles"
+                    },
+                    {
+                      "type": "story",
+                      "description": "Fetch list of articles"
+                    },
+                    {
+                      "type": "owner",
+                      "description": "Ejaz"
+                    }
+                  ],
                   "expectedStatus": "passed",
                   "projectId": "",
                   "projectName": "",
@@ -86,7 +103,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 626,
+                      "duration": 578,
                       "errors": [],
                       "stdout": [
                         {
@@ -95,24 +112,24 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-03-17T19:01:19.844Z",
+                      "startTime": "2025-04-13T15:49:32.003Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "eb3da9e438d8ddf58e09-03a9e0b5ebf70eaacd3c",
-              "file": "api/articles.test.js",
-              "line": 21,
+              "id": "bf8244414f115b24f564-9f93064fd7abc53d8e9e",
+              "file": "specs/articles.test.js",
+              "line": 20,
               "column": 7
             }
           ],
           "suites": [
             {
               "title": "Articles API Tests",
-              "file": "api/articles.test.js",
-              "line": 69,
+              "file": "specs/articles.test.js",
+              "line": 31,
               "column": 6,
               "specs": [
                 {
@@ -122,7 +139,20 @@
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [],
+                      "annotations": [
+                        {
+                          "type": "feature",
+                          "description": "Articles"
+                        },
+                        {
+                          "type": "story",
+                          "description": "Create an new article"
+                        },
+                        {
+                          "type": "owner",
+                          "description": "Ejaz"
+                        }
+                      ],
                       "expectedStatus": "passed",
                       "projectId": "",
                       "projectName": "",
@@ -131,25 +161,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 386,
+                          "duration": 284,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Article created successfully with slug: New-Playwright-Article-0f3cf5bd-8122-42b5-8766-687694b50f06-22521\n"
+                              "text": "Article created successfully with slug: New-Playwright-Article-f70845b8-909c-470d-afd7-6a36c33bc9e9-22521\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-03-17T19:01:21.220Z",
+                          "startTime": "2025-04-13T15:49:33.077Z",
                           "attachments": []
                         }
                       ],
                       "status": "expected"
                     }
                   ],
-                  "id": "eb3da9e438d8ddf58e09-9ac0fbd2a0b7e1677795",
-                  "file": "api/articles.test.js",
-                  "line": 72,
+                  "id": "bf8244414f115b24f564-61025b7d87c8c8317f10",
+                  "file": "specs/articles.test.js",
+                  "line": 36,
                   "column": 7
                 },
                 {
@@ -159,7 +189,20 @@
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [],
+                      "annotations": [
+                        {
+                          "type": "feature",
+                          "description": "Articles"
+                        },
+                        {
+                          "type": "story",
+                          "description": "Edit an article"
+                        },
+                        {
+                          "type": "owner",
+                          "description": "Ejaz"
+                        }
+                      ],
                       "expectedStatus": "passed",
                       "projectId": "",
                       "projectName": "",
@@ -168,31 +211,31 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 714,
+                          "duration": 603,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Article before update: {\n  slug: \u001b[32m'New-Playwright-Article-0f3cf5bd-8122-42b5-8766-687694b50f06-22521'\u001b[39m,\n  title: \u001b[32m'New Playwright Article 0f3cf5bd-8122-42b5-8766-687694b50f06'\u001b[39m,\n  description: \u001b[32m'Automating API testing'\u001b[39m,\n  body: \u001b[32m'This is an article created by Ejaz with ID 0f3cf5bd-8122-42b5-8766-687694b50f06'\u001b[39m,\n  tagList: [ \u001b[32m'testing'\u001b[39m, \u001b[32m'automation'\u001b[39m ],\n  createdAt: \u001b[32m'2025-03-17T19:01:21.350Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-03-17T19:01:21.350Z'\u001b[39m,\n  favorited: \u001b[33mfalse\u001b[39m,\n  favoritesCount: \u001b[33m0\u001b[39m,\n  author: {\n    username: \u001b[32m'EjazQA'\u001b[39m,\n    bio: \u001b[1mnull\u001b[22m,\n    image: \u001b[32m'https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg'\u001b[39m,\n    following: \u001b[33mfalse\u001b[39m\n  }\n}\n"
+                              "text": "Article before update: {\n  slug: \u001b[32m'New-Playwright-Article-f70845b8-909c-470d-afd7-6a36c33bc9e9-22521'\u001b[39m,\n  title: \u001b[32m'New Playwright Article f70845b8-909c-470d-afd7-6a36c33bc9e9'\u001b[39m,\n  description: \u001b[32m'Automating API testing'\u001b[39m,\n  body: \u001b[32m'This is an article created by Ejaz with ID f70845b8-909c-470d-afd7-6a36c33bc9e9'\u001b[39m,\n  tagList: [ \u001b[32m'testing'\u001b[39m, \u001b[32m'automation'\u001b[39m ],\n  createdAt: \u001b[32m'2025-04-13T15:49:33.165Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-04-13T15:49:33.165Z'\u001b[39m,\n  favorited: \u001b[33mfalse\u001b[39m,\n  favoritesCount: \u001b[33m0\u001b[39m,\n  author: {\n    username: \u001b[32m'EjazQA'\u001b[39m,\n    bio: \u001b[1mnull\u001b[22m,\n    image: \u001b[32m'https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg'\u001b[39m,\n    following: \u001b[33mfalse\u001b[39m\n  }\n}\n"
                             },
                             {
-                              "text": "response body {\n  article: {\n    slug: \u001b[32m'New-Updated-data-Articles-0f3cf5bd-8122-42b5-8766-687694b50f06-22521'\u001b[39m,\n    title: \u001b[32m'New Updated data Articles 0f3cf5bd-8122-42b5-8766-687694b50f06'\u001b[39m,\n    description: \u001b[32m'Test QAdd'\u001b[39m,\n    body: \u001b[32m'This article has been updated via Playwright API.'\u001b[39m,\n    tagList: [ \u001b[32m'testing'\u001b[39m, \u001b[32m'automation'\u001b[39m, \u001b[32m'playwright'\u001b[39m ],\n    createdAt: \u001b[32m'2025-03-17T19:01:21.350Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-03-17T19:01:22.080Z'\u001b[39m,\n    favorited: \u001b[33mfalse\u001b[39m,\n    favoritesCount: \u001b[33m0\u001b[39m,\n    author: {\n      username: \u001b[32m'EjazQA'\u001b[39m,\n      bio: \u001b[1mnull\u001b[22m,\n      image: \u001b[32m'https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg'\u001b[39m,\n      following: \u001b[33mfalse\u001b[39m\n    }\n  }\n}\n"
+                              "text": "response body {\n  article: {\n    slug: \u001b[32m'New-Updated-data-Articles-f70845b8-909c-470d-afd7-6a36c33bc9e9-22521'\u001b[39m,\n    title: \u001b[32m'New Updated data Articles f70845b8-909c-470d-afd7-6a36c33bc9e9'\u001b[39m,\n    description: \u001b[32m'Test QAdd'\u001b[39m,\n    body: \u001b[32m'This article has been updated via Playwright API.'\u001b[39m,\n    tagList: [ \u001b[32m'testing'\u001b[39m, \u001b[32m'automation'\u001b[39m, \u001b[32m'playwright'\u001b[39m ],\n    createdAt: \u001b[32m'2025-04-13T15:49:33.165Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-04-13T15:49:33.761Z'\u001b[39m,\n    favorited: \u001b[33mfalse\u001b[39m,\n    favoritesCount: \u001b[33m0\u001b[39m,\n    author: {\n      username: \u001b[32m'EjazQA'\u001b[39m,\n      bio: \u001b[1mnull\u001b[22m,\n      image: \u001b[32m'https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg'\u001b[39m,\n      following: \u001b[33mfalse\u001b[39m\n    }\n  }\n}\n"
                             },
                             {
-                              "text": "Article with slug \"New-Playwright-Article-0f3cf5bd-8122-42b5-8766-687694b50f06-22521\" edited successfully\n"
+                              "text": "Article with slug \"New-Playwright-Article-f70845b8-909c-470d-afd7-6a36c33bc9e9-22521\" edited successfully\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-03-17T19:01:21.612Z",
+                          "startTime": "2025-04-13T15:49:33.362Z",
                           "attachments": []
                         }
                       ],
                       "status": "expected"
                     }
                   ],
-                  "id": "eb3da9e438d8ddf58e09-fe3bd5e46f3781406d6a",
-                  "file": "api/articles.test.js",
-                  "line": 92,
+                  "id": "bf8244414f115b24f564-bb4434dc552cb72978b5",
+                  "file": "specs/articles.test.js",
+                  "line": 57,
                   "column": 7
                 }
               ]
@@ -202,15 +245,15 @@
       ]
     },
     {
-      "title": "api/favorites.test.js",
-      "file": "api/favorites.test.js",
+      "title": "specs/favorites.test.js",
+      "file": "specs/favorites.test.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Favorites API Tests",
-          "file": "api/favorites.test.js",
+          "file": "specs/favorites.test.js",
           "line": 7,
           "column": 6,
           "specs": [
@@ -221,7 +264,20 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [],
+                  "annotations": [
+                    {
+                      "type": "feature",
+                      "description": "Favorites"
+                    },
+                    {
+                      "type": "story",
+                      "description": "Favorite an article"
+                    },
+                    {
+                      "type": "owner",
+                      "description": "Ejaz"
+                    }
+                  ],
                   "expectedStatus": "passed",
                   "projectId": "",
                   "projectName": "",
@@ -230,7 +286,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 426,
+                      "duration": 273,
                       "errors": [],
                       "stdout": [
                         {
@@ -239,15 +295,15 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-03-17T19:01:19.779Z",
+                      "startTime": "2025-04-13T15:49:31.997Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "4d01c48d201a8ab5c192-e89d5289f2758fdbd673",
-              "file": "api/favorites.test.js",
+              "id": "65e0f1aa5bf3e0c8ea54-c0f87fd1cbc50c7b4c05",
+              "file": "specs/favorites.test.js",
               "line": 18,
               "column": 7
             }
@@ -256,15 +312,15 @@
       ]
     },
     {
-      "title": "api/tags.test.js",
-      "file": "api/tags.test.js",
+      "title": "specs/tags.test.js",
+      "file": "specs/tags.test.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Tags API Tests",
-          "file": "api/tags.test.js",
+          "file": "specs/tags.test.js",
           "line": 6,
           "column": 6,
           "specs": [
@@ -275,7 +331,20 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [],
+                  "annotations": [
+                    {
+                      "type": "feature",
+                      "description": "Tags"
+                    },
+                    {
+                      "type": "story",
+                      "description": "Fetch tags"
+                    },
+                    {
+                      "type": "owner",
+                      "description": "Ejaz"
+                    }
+                  ],
                   "expectedStatus": "passed",
                   "projectId": "",
                   "projectName": "",
@@ -284,7 +353,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 776,
+                      "duration": 471,
                       "errors": [],
                       "stdout": [
                         {
@@ -293,15 +362,15 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-03-17T19:01:19.753Z",
+                      "startTime": "2025-04-13T15:49:31.994Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "c4b36fbe1cad0d9f1f6d-40886754dad37df70368",
-              "file": "api/tags.test.js",
+              "id": "d91b2539503368f3f1e8-d7dffd43bb8ea18ea96b",
+              "file": "specs/tags.test.js",
               "line": 15,
               "column": 7
             }
@@ -312,8 +381,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-03-17T19:01:17.430Z",
-    "duration": 5037.361,
+    "startTime": "2025-04-13T15:49:31.545Z",
+    "duration": 2429.978,
     "expected": 5,
     "skipped": 0,
     "unexpected": 0,

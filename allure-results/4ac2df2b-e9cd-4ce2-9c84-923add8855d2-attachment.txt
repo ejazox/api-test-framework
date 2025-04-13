@@ -1,0 +1,37 @@
+Article before update: {
+  slug: 'New-Playwright-Article-fc935951-2c42-4303-95ce-8c7e58a0f362-22521',
+  title: 'New Playwright Article fc935951-2c42-4303-95ce-8c7e58a0f362',
+  description: 'Automating API testing',
+  body: 'This is an article created by Ejaz with ID fc935951-2c42-4303-95ce-8c7e58a0f362',
+  tagList: [ 'testing', 'automation' ],
+  createdAt: '2025-04-13T14:59:58.193Z',
+  updatedAt: '2025-04-13T14:59:58.193Z',
+  favorited: false,
+  favoritesCount: 0,
+  author: {
+    username: 'EjazQA',
+    bio: null,
+    image: 'https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg',
+    following: false
+  }
+}
+response body {
+  article: {
+    slug: 'New-Updated-data-Articles-fc935951-2c42-4303-95ce-8c7e58a0f362-22521',
+    title: 'New Updated data Articles fc935951-2c42-4303-95ce-8c7e58a0f362',
+    description: 'Test QAdd',
+    body: 'This article has been updated via Playwright API.',
+    tagList: [ 'testing', 'automation', 'playwright' ],
+    createdAt: '2025-04-13T14:59:58.193Z',
+    updatedAt: '2025-04-13T14:59:58.851Z',
+    favorited: false,
+    favoritesCount: 0,
+    author: {
+      username: 'EjazQA',
+      bio: null,
+      image: 'https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg',
+      following: false
+    }
+  }
+}
+Article with slug "New-Playwright-Article-fc935951-2c42-4303-95ce-8c7e58a0f362-22521" edited successfully

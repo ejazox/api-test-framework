@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
-import { TagsAPI } from './tags.api.js';
-import { TagsAssertions } from './tags.asserts.js';
+import { TagsAPI } from '../api/tags.api.js';
+import { TagsAssertions } from '../asserts/tags.asserts.js';
 import { createApiRequest } from '../utils/api.utils.js';
 
 test.describe('Tags API Tests', () => {
@@ -13,6 +13,9 @@ test.describe('Tags API Tests', () => {
   });
 
   test('Verify fetching tags', async () => {
+    test.info().annotations.push({ type: 'feature', description: 'Tags' });
+    test.info().annotations.push({ type: 'story', description: 'Fetch tags' });
+    test.info().annotations.push({ type: 'owner', description: 'Ejaz' });
     const response = await tagsAPI.fetchTags(apiRequest);
     const responseBody = await response.json();
     TagsAssertions.validateTagsStructure(responseBody);
