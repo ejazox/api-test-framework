@@ -28,8 +28,8 @@ jobs:
         run: npx playwright install
 
       - name: Install Allure Commandline
-        run: npm install -g allure-commandline --save-
-        
+        run: npm install -g allure-commandline
+
       - name: Run API tests with Allure Reporter
         run: npx playwright test --config=playwright.config.ts --reporter=allure-playwright  
 
