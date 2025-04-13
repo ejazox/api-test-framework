@@ -13,15 +13,12 @@ RUN npm install
 # Install Playwright dependencies
 RUN npx playwright install
 
-# Install Allure commandline and the correct Playwright Allure reporter
-RUN npm install allure-commandline --save-dev
-RUN npm install allure-playwright --save-dev
-
 # Copy the rest of the application files
 COPY . .
 
 # Set the environment variables (if needed)
 ENV BASE_URL=https://conduit-api.bondaracademy.com/api
 
-# Command to run Playwright tests and generate Allure results
-CMD npx playwright test --reporter=list,allure-playwright
+# Command to run Playwright tests
+CMD ["npx", "playwright", "test"]
+
