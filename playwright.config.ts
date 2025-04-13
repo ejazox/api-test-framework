@@ -1,7 +1,7 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
-  testDir: 'tests',
+  testDir: 'tests/specs',
   timeout: 30000, // Set a default timeout for tests
   retries: 2, // Retry failed tests twice
   reporter: [['dot'], ['json', { outputFile: 'test-results.json' }]], // Output format
